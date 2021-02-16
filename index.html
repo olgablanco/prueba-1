@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9d182bd3ba.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="tipografias/bariol-bold.css">
+    <link rel="stylesheet" href="estilos/estilos-generales.css">
+    <link rel="stylesheet" media="(max-width: 768px)" href="estilos/estilos-768.css">
+    <style>
+        .boton2 {
+            margin-bottom: 10%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!--Menu-->
+    <nav id="menugigante">
+        <i id="iconocerrar" class="fas fa-times"></i>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sinopsis.html">Sinopsis</a></li>
+            <li><a href="personajes.html">Personajes</a></li>
+            <li><a href="shop.html">Soul shop</a></li>
+        </ul>
+
+    </nav>
+    <a href="index.html"><img id="logo" src="imagenes/logo-soul-2.png" alt=""></a>
+
+    <i id="iconomenu" class="fas fa-bars"></i>
+
+    <!--Fondo-video-->
+    <video width="3046" height="1708" id="videofondo" poster="soul-video/video-soul.jpg" muted="muted" autoplay="autoplay" loop="loop">
+        <source src="soul-video/video-soul.mp4" type="video/mp4">
+        <source src="" type="video/webm">
+    </video>
+
+    <div id="llamada">
+        <h2>Disfruta de la nueva aventura de Disney</h2>
+        <div id="enlaces">
+            <a class="boton2" href="https://www.disneyplus.com/es-es/video/c789f7b5-f6eb-41c4-8e4d-b3be23444690" target="_blank">VER TRAILER <i class="fas fa-play"></i></a>
+            <a class="boton" href="sinopsis.html">ENTRAR</a>
+        </div>
+    </div>
+
+    <!--jquery menu-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $('#iconomenu').on('click', function() {
+
+            $("#menugigante").css("right", "0%");
+            $("#iconomenu").css("opacity", "0");
+        });
+
+    </script>
+    <script>
+        $('#iconocerrar').on('click', function() {
+
+            $("#menugigante").css("right", "-100%");
+            $("#iconomenu").css("opacity", "1");
+        });
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9d182bd3ba.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="tipografias/bariol-bold.css">
+    <link rel="stylesheet" href="tipografias/bariol-regular.css">
+    <link rel="stylesheet" href="estilos/estilos-generales.css">
+    <link rel="stylesheet" media="(max-width: 768px)" href="estilos/estilos-768.css">
+</head>
+
+<body>
+    <!--Menu-->
+    <nav id="menugigante">
+        <i id="iconocerrar" class="fas fa-times"></i>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sinopsis.html">Sinopsis</a></li>
+            <li><a href="personajes.html">Personajes</a></li>
+            <li><a href="shop.html">Soul shop</a></li>
+        </ul>
+
+    </nav>
+    <i id="iconomenu" class="fas fa-bars"></i>
+    <!--cabeceras-->
+    <header id="cabecera">
+        <a href="index.html"><img src="imagenes/cabecera-soul.jpg" class="imgresponsive" alt=""></a>
+    </header>
+
+    <header id="cabecera2">
+        <div id="botondisneyplus">
+            <a class="boton" href="https://www.disneyplus.com/es-es" target="_blank">VER EN DISNEY+</a>
+        </div>
+    </header>
+
+    <main>
+        <!--containersinopsis-->
+        <section id="cajasinopsis">
+            <div id="cajatextoimagen">
+                <h1>Lo nuevo de Disney</h1>
+                <h3><mark> 6+ </mark>/ 2020 / 1h 49 min /<br>Familiar, Comedia, Fantasía, Animación, Música</h3>
+                <img src="imagenes/cartel.jpg" width='300' height="499" class="imgresponsive" alt="">
+            </div>
+            <div id="cajatexto1">
+                <p>¿Qué es lo que hace que tú seas… TÚ? El nuevo largometraje de Pixar Animation Studios presenta a Joe Gardner, un profesor de música de instituto que recibe la oportunidad de su vida: tocar en la mejor banda de jazz de la ciudad. Pero un paso en falso lo lleva de las calles de Nueva York al Más Atrás, un lugar de fantasía donde las nuevas almas reciben su personalidad, peculiaridades e intereses antes de ir a la Tierra. Decidido a volver a su vida, Joe se une a 22, un alma precoz que nunca ha entendido el atractivo de la experiencia humana. En su desesperado empeño por enseñarle a 22 lo maravilloso que es vivir, Joe podría acabar encontrando la respuesta a las preguntas más importantes de la vida.</p>
+            </div>
+
+            <div id="cajatexto2">
+                <div class="col">
+                    <hr color="white" size=1>
+                    <p>Dirigida por el ganador del Oscar Pete Doter (‘Inside’, ‘Up’), codirigida por Kemp Powers (‘One Night in Miami’), escrita por Kemp Powers y Mike Jones y producida por la nominada al Oscar Dana Murray (cortometraje de Pixar ‘Lou’), Soul presenta música original del músico de renombre mundial Jon Batiste. Originalmente destinada a ser exhibida en cines, el estreno de la película se ha retrasado varias veces como resultado de la pandemia COVID-19 y en su lugar se estrenó el 25 de Diciembre de 2020 en Disney+.</p>
+                </div>
+                <div class="col2">
+                    <p>Duración: <br><strong>1h 49min</strong>
+                    <p>Fecha de estreno:<br><strong>2020</strong></p>
+                    <p>Género:<br><strong>Familiar, Comedia, Fantasía, Musical</strong></p>
+                    <p>Calificación: <br><mark><strong>6+ </strong></mark> </p>
+                </div>
+                <div class="col2">
+                    <p>Dirección: <br> <strong>Peter Docter</strong></p>
+                    <p>Con: <br> <strong>Jamie Foxx<br>Tina Fey <br>Ahmir-Khalib ‘Questlove’ Thompson <br>David Diggs</strong></p>
+                </div>
+            </div>
+            <div class="limpiar"></div>
+        </section>
+
+        <!--spotify-->
+        <section id="cajaspotify">
+            <img src="imagenes/logo-soul-2.png" width="150" height="100" alt="">
+            <h2>MÚSICA DISPONIBLE EN PLATAFORMAS DIGITALES</h2>
+            <a class="boton2" href="http://disneymusic.co/soulsoundtrack" target="_blank">ESCÚCHALO </a>
+        </section>
+    </main>
+    <!--piedepagina-->
+    <footer id="piepagina">
+        <div id="logopie">
+            <img src="imagenes/logo-disney-pixar.png" class="imgresponsive" alt="">
+        </div>
+        <div id="textopie">
+            <p>© Disney•Pixar © & ™ Lucasfilm LTD © Marvel. Reservados todos los derechos, Disney Entertainment</p>
+        </div>
+        <div id="redesociales">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+
+    <!--jquery menu-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $('#iconomenu').on('click', function() {
+
+            $("#menugigante").css("right", "0%");
+            $("#iconomenu").css("opacity", "0");
+        });
+
+    </script>
+    <script>
+        $('#iconocerrar').on('click', function() {
+
+            $("#menugigante").css("right", "-100%");
+            $("#iconomenu").css("opacity", "1");
+        });
+
+    </script>
+
+    <!-- Jquery fondo -->
+    <script type="text/javascript">
+        $(window).scroll(function() {
+            $(this).scrollTop() < 1000 ?
+                $('#cajasinopsis').removeClass('cambiocajasinopsis') :
+                $('#cajasinopsis').addClass('cambiocajasinopsis');
+        });
+
+    </script>
+    <!--Jquery cabera disney+-->
+    <script type="text/javascript">
+        $(window).scroll(function() {
+            $(this).scrollTop() < 1400 ?
+                $('#cabecera2').removeClass('cambiocabecera2') :
+                $('#cabecera2').addClass('cambiocabecera2');
+        });
+
+    </script>
+</body>
+
+
+
+
+
+
+
+
+
+
+</html>
